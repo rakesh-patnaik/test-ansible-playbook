@@ -1,0 +1,6 @@
+---
+- name: "Perform first component install"
+  hosts: "{{ host_group_name }}"
+  gather_facts: false
+  roles:
+  - { role: "../roles/test-ansible-role", task: "deploy" }
